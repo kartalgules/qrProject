@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Outfit:wght@400;700&display=swap');
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    font-family: "Outfit", "sans-serif";
+    font-size : 15px;
+    background-color: var(--light-gray);
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 1px);
+    flex-direction: column;
+    margin: 1.25rem;
+}
+img{
+    max-width: 100%;
+}
+
+.container{
+    background-color: var(--white);
+    padding: 1.25rem 1.25rem 3rem 1.25rem;
+    border-radius: 1.25rem;
+}
+.container img{
+    border-radius: 0.625rem;
+    margin-bottom: 1rem;
+}
+.container h1{
+    width: 95%;
+    margin: auto;
+    color: var(--dark-blue);
+    text-align: center;
+    font-size: 27px;
+}
+.container p {
+    color: var(--grayish-blue);
+    text-align: center;
+    margin: 15px 1.2rem;
+    width: 90%;
+    font-size: 19px;
+}
+.attribution {
+    font-size: 11px; 
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+@media (min-width: 500px) {
+    .container{
+        width: 400px;
+    }
+}
